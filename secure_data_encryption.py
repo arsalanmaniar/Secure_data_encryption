@@ -84,7 +84,7 @@ elif choice == "Register":
                 st.success("User registered successfully!")
         else:
             st.error("Please enter both username and password.")
-    elif choice == "Login":
+elif choice == "Login":
         st.subheader("Login")
         
         if time.time() < st.session_state.lockout_time:
